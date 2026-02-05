@@ -1,0 +1,11 @@
+
+server:
+ port: 8082
+spring:
+ datasource:
+  url: jdbc:postgresql://db-publications:5432/publicationsdb
+  username: postgres
+  password: postgres
+ jpa:
+  hibernate.ddl-auto: update
+  show-sql: true

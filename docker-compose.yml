@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db-authors:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: authorsdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+
+  db-publications:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: publicationsdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+
+  authors-service:
+    build: ./authors-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - db-authors
+
+  publications-service:
+    build: ./publications-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - db-publications
