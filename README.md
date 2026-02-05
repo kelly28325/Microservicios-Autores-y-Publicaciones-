@@ -50,27 +50,27 @@ docker compose up --build -d
 docker compose ps
 ```
 
-##Ejecución del frontend
+## Ejecución del frontend
 
-##Ingresa a la carpeta del frontend:
+## Ingresa a la carpeta del frontend:
 
 ```
 cd frontend
 ```
 
-##Instala dependencias:
+## Instala dependencias:
 
 ```
 npm install
 ```
 
-##Ejecuta el frontend:
+## Ejecuta el frontend:
 
 ```
 npm run dev
 ```
 
-##Abre en el navegador:
+## Abre en el navegador:
 
 ```
 http://localhost:5173
