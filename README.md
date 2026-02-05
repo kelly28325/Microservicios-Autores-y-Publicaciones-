@@ -77,7 +77,7 @@ http://localhost:5173
 ```
 
 4. Acceder a:
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:5174
 - Authors API: http://localhost:8081/authors
 - Publications API: http://localhost:8082/publications
 
