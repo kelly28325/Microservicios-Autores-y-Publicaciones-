@@ -32,8 +32,10 @@ README.md
 ## Despliegue del backend con Docker
 
 Clona el repositorio:
+
 ```
 git clone https://github.com/tu-usuario/arquitectura-microservicios-backend.git
+
 cd arquitectura-microservicios-backend
 ```
 ## Levanta los servicios con Docker Compose:
@@ -53,13 +55,13 @@ docker compose ps
 - Authors API: http://localhost:8081/authors
 - Publications API: http://localhost:8082/publications
 
-``
+
 ## Endpoints Principales
 ### Authors
 - GET /authors
 - POST /authors
   
-``
+
 ### Publications
 - POST /publications
 - GET /publications
