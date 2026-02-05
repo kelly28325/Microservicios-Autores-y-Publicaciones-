@@ -29,17 +29,32 @@ README.md
 - Material UI
 - Docker & Docker Compose
 
-## Ejecución del Proyecto
-1. Clonar el repositorio
-2. Ubicarse en la raíz del proyecto
-3. Ejecutar:
-```bash
-docker compose up --build
+## Despliegue del backend con Docker
+
+Clona el repositorio:
+
+``
+git clone https://github.com/tu-usuario/arquitectura-microservicios-backend.git
+cd arquitectura-microservicios-backend
+
+``
+## Levanta los servicios con Docker Compose:
+
+``
+docker compose up --build -d
+`
+
+## Verifica que los contenedores estén corriendo:
+
+``
+docker compose ps
+```
+
 ```
 4. Acceder a:
 - Frontend: http://localhost:5173
-- Authors API: http://localhost:8081
-- Publications API: http://localhost:8082
+- Authors API: http://localhost:8081/authors
+- Publications API: http://localhost:8082/publications
 
 ## Endpoints Principales
 ### Authors
@@ -47,8 +62,9 @@ docker compose up --build
 - POST /authors
 
 ### Publications
-- GET /publications
 - POST /publications
+- GET /publications
+- GET /publications/{id}
 - PATCH /publications/{id}/status
 
 ## BPMN
