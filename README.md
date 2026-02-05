@@ -48,17 +48,18 @@ docker compose up --build -d
 docker compose ps
 ```
 
-```
 4. Acceder a:
 - Frontend: http://localhost:5173
 - Authors API: http://localhost:8081/authors
 - Publications API: http://localhost:8082/publications
 
+``
 ## Endpoints Principales
 ### Authors
 - GET /authors
 - POST /authors
-
+  
+``
 ### Publications
 - POST /publications
 - GET /publications
