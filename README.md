@@ -32,18 +32,19 @@ README.md
 ## Despliegue del backend con Docker
 
 Clona el repositorio:
-
+```
 git clone https://github.com/tu-usuario/arquitectura-microservicios-backend.git
 cd arquitectura-microservicios-backend
-
+```
 ## Levanta los servicios con Docker Compose:
 
+```
 docker compose up --build -d
-
+```
 
 ## Verifica que los contenedores estén corriendo:
 
-
+```
 docker compose ps
 ```
 
