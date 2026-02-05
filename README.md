@@ -50,6 +50,32 @@ docker compose up --build -d
 docker compose ps
 ```
 
+##Ejecución del frontend
+
+##Ingresa a la carpeta del frontend:
+
+```
+cd frontend
+```
+
+##Instala dependencias:
+
+```
+npm install
+```
+
+##Ejecuta el frontend:
+
+```
+npm run dev
+```
+
+##Abre en el navegador:
+
+```
+http://localhost:5173
+```
+
 4. Acceder a:
 - Frontend: http://localhost:5173
 - Authors API: http://localhost:8081/authors
