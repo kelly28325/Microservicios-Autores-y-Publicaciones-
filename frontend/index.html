@@ -1,8 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Editorial</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plataforma Editorial - Sistema de Gestión de Autores y Publicaciones" />
+    <meta name="keywords" content="autores, publicaciones, gestión editorial, microservicios" />
+    <meta name="author" content="Tu Nombre o Empresa" />
+    <meta name="theme-color" content="#1976d2" />
+    
+    <title>Plataforma Editorial - Gestión de Autores y Publicaciones</title>
+    
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    
+    <!-- Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    
+    <!-- Estilos globales -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+
+      /* Animación de carga */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        animation: fadeIn 0.5s ease-in;
+      }
+
+      /* Scrollbar personalizada */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
